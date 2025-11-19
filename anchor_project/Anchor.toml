@@ -1,0 +1,22 @@
+[toolchain]
+anchor_version = "0.31.1"
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+tipping = "46SS66ojgt3YBDmDPJci7tvnQLSKzXd2t5tiVmHiY3D3"
+
+[programs.localnet]
+tipping = "46SS66ojgt3YBDmDPJci7tvnQLSKzXd2t5tiVmHiY3D3"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+cleanup-local = "node scripts/cleanup-local.js"
