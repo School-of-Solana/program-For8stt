@@ -14,7 +14,7 @@ tipping = "46SS66ojgt3YBDmDPJci7tvnQLSKzXd2t5tiVmHiY3D3"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Devnet"
+cluster = "localnet" //Devnet
 wallet = "~/.config/solana/id.json"
 
 [scripts]
